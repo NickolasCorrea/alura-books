@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* position: relative, libera a opção de você botar outros atributos como top, left, right...*/
 }
 
 .container {
@@ -21,4 +22,40 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista-menu { /* Faz com que a lista sempre esteja desativada*/
+    display: none;
+    position: absolute; /* Permite que você movimente o elemnto de acordo com outro elemento pai */
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu { /* Verifica se o container__botao está checado, já que ele é uma check box. o "~" é um combinador CSS, que faz com que seja procurada outra classe, no caso, lista-menu*/
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    text-decoration: none;
+    color: var(--azul-degrade);
+    /* -webkit-text-fill-color: transparent; */
+    background-clip: text;
+    text-transform: uppercase; /* converte todos os caracteres para maiúsculos */
+}
+
+.container__botao {
+    display: none; /* Desabilita visualmente o botão de checagem */
 }
