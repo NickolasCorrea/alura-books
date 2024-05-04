@@ -1,0 +1,8 @@
+hr {
+    margin: 0;
+}
+
+.roadape__titulo {
+    background-color: var(--branco);
+    padding: 1em;
+}

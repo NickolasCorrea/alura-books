@@ -48,7 +48,7 @@
 
 .lista-menu__link {
     background: var(--azul-degrade);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* webkit é usado para ter certeza que irá funcionar em todos os navegadores */
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase; /* converte os caracteres para maiúsculos */
