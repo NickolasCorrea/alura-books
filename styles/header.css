@@ -26,7 +26,7 @@
 
 .lista-menu { /* Faz com que a lista sempre esteja desativada*/
     display: none;
-    position: absolute; /* Permite que você movimente o elemnto de acordo com outro elemento pai */
+    position: absolute; /*position: absolute - Permite que você movimente o elemnto de acordo com outro elemento pai */
     top: 100%;
     width: 60vw;
 }
@@ -49,11 +49,9 @@
 .lista-menu__link {
     background: var(--azul-degrade);
     -webkit-background-clip: text;
-    text-decoration: none;
-    color: var(--azul-degrade);
-    /* -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-transform: uppercase; /* converte todos os caracteres para maiúsculos */
+    text-transform: uppercase; /* converte os caracteres para maiúsculos */
 }
 
 .container__botao {

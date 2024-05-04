@@ -1,4 +1,4 @@
-@import url(styles/header.css); /* Ao importar o header.css dessa forma, o HTML fica com menos links de stylesheet, e porque o carregamento será feito de uma unica vez, ao invés de várias (carregamento mais rápido). */
+@import url("styles/header.css"); /* Ao importar o header.css dessa forma, o HTML fica com menos links de stylesheet, e porque o carregamento será feito de uma unica vez, ao invés de várias (carregamento mais rápido). */
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
 
