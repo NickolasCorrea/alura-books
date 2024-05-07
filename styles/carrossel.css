@@ -12,13 +12,14 @@
     width: 100%;
 }
 
-.swiper-button-prev, swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     display: none;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: initial;
-    margin: 0.8em 0;
+    margin: .5em 0;
 }
 
 .card__descricao {
@@ -57,7 +58,7 @@
 }
 
 .descricao__texto {
-    font-size: 14px
+    font-size: 14px;
 }
 
 .botoes__item {
@@ -69,7 +70,7 @@
     padding: 1em 2.2em;
     color: var(--branco);
     font-weight: 700;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -88,6 +89,7 @@
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
+        top: 60%;
     }
 
     .card {
